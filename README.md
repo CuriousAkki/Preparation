@@ -533,3 +533,314 @@ Here’s a list of **Java programs** that focus on **basic logic building**. The
 
 These programs build basic logic-building skills using **loops**, **pattern printing**, and **mathematical operations**. They are designed to help you improve your coding and problem-solving abilities. Let me know if you'd like more explanations or further examples!
 
+
+**Comman Git Commands**
+Here is a list of **common Git commands** that are frequently used to manage a repository, track changes, and collaborate with others. These commands cover basic operations, working with branches, and managing commits.
+
+### **Basic Git Commands**
+
+1. **Initialize a Git repository**
+
+   * Initializes a new Git repository in the current directory.
+
+   ```bash
+   git init
+   ```
+
+2. **Check the status of the repository**
+
+   * Shows the current status of the working directory (which files are staged, modified, etc.).
+
+   ```bash
+   git status
+   ```
+
+3. **Track a file**
+
+   * Adds a file to the staging area (before committing).
+
+   ```bash
+   git add <file-name>
+   ```
+
+4. **Track all files**
+
+   * Adds all files in the directory to the staging area.
+
+   ```bash
+   git add .
+   ```
+
+5. **Commit changes**
+
+   * Commits staged changes to the local repository with a message.
+
+   ```bash
+   git commit -m "Your commit message"
+   ```
+
+6. **View commit history**
+
+   * Shows the commit history for the repository.
+
+   ```bash
+   git log
+   ```
+
+7. **View commit history with a one-line summary**
+
+   * Shows the commit history with a brief, one-line description of each commit.
+
+   ```bash
+   git log --oneline
+   ```
+
+8. **Create a new branch**
+
+   * Creates a new branch from the current branch.
+
+   ```bash
+   git branch <branch-name>
+   ```
+
+9. **Switch to another branch**
+
+   * Switches to a different branch.
+
+   ```bash
+   git checkout <branch-name>
+   ```
+
+10. **Create and switch to a new branch**
+
+    * Creates and switches to a new branch in one command.
+
+    ```bash
+    git checkout -b <branch-name>
+    ```
+
+11. **Merge branches**
+
+    * Merges the changes from one branch into the current branch.
+
+    ```bash
+    git merge <branch-name>
+    ```
+
+12. **Delete a branch**
+
+    * Deletes a local branch (only after it has been merged or is no longer needed).
+
+    ```bash
+    git branch -d <branch-name>
+    ```
+
+13. **Push changes to remote**
+
+    * Pushes local commits to a remote repository (e.g., GitHub).
+
+    ```bash
+    git push origin <branch-name>
+    ```
+
+14. **Pull changes from remote**
+
+    * Fetches changes from a remote repository and merges them into the current branch.
+
+    ```bash
+    git pull origin <branch-name>
+    ```
+
+15. **Clone a remote repository**
+
+    * Creates a local copy of a remote repository.
+
+    ```bash
+    git clone <repository-url>
+    ```
+
+16. **View remote repositories**
+
+    * Shows the remotes associated with the repository.
+
+    ```bash
+    git remote -v
+    ```
+
+17. **Add a remote repository**
+
+    * Adds a new remote repository URL (for pushing and pulling changes).
+
+    ```bash
+    git remote add origin <repository-url>
+    ```
+
+18. **Fetch changes from a remote**
+
+    * Fetches changes from the remote repository but does not merge them.
+
+    ```bash
+    git fetch
+    ```
+
+19. **Stash changes**
+
+    * Temporarily saves changes (useful when you need to switch branches).
+
+    ```bash
+    git stash
+    ```
+
+20. **Apply stashed changes**
+
+    * Applies previously stashed changes to the working directory.
+
+    ```bash
+    git stash apply
+    ```
+
+21. **List stashes**
+
+    * Shows the list of stashed changes.
+
+    ```bash
+    git stash list
+    ```
+
+22. **Remove files from the staging area**
+
+    * Unstages files that are added to the staging area.
+
+    ```bash
+    git reset <file-name>
+    ```
+
+23. **Undo last commit**
+
+    * Reverts the last commit (keeps the changes in the working directory).
+
+    ```bash
+    git reset --soft HEAD~1
+    ```
+
+24. **Discard changes in working directory**
+
+    * Discards changes in the working directory and restores the file to the last committed state.
+
+    ```bash
+    git checkout -- <file-name>
+    ```
+
+25. **View changes made to a file**
+
+    * Shows the changes made to a file (compared to the last commit).
+
+    ```bash
+    git diff <file-name>
+    ```
+
+---
+
+### **Working with Tags**
+
+26. **Create a tag**
+
+    * Creates a tag for a specific commit (e.g., version 1.0).
+
+    ```bash
+    git tag <tag-name>
+    ```
+
+27. **Push tags to remote**
+
+    * Pushes tags to the remote repository.
+
+    ```bash
+    git push origin --tags
+    ```
+
+28. **View all tags**
+
+    * Lists all tags in the repository.
+
+    ```bash
+    git tag
+    ```
+
+---
+
+### **Working with Remotes**
+
+29. **Remove a remote**
+
+    * Removes a remote from the repository.
+
+    ```bash
+    git remote remove <remote-name>
+    ```
+
+30. **Rename a remote**
+
+    * Renames an existing remote.
+
+    ```bash
+    git remote rename <old-name> <new-name>
+    ```
+
+31. **Show remote details**
+
+    * Shows detailed information about a remote.
+
+    ```bash
+    git remote show <remote-name>
+    ```
+
+---
+
+### **Other Useful Commands**
+
+32. **Clean untracked files**
+
+    * Removes untracked files and directories from the working directory.
+
+    ```bash
+    git clean -f -d
+    ```
+
+33. **Show changes to be committed**
+
+    * Shows which files are staged for commit.
+
+    ```bash
+    git diff --cached
+    ```
+
+34. **Revert a commit**
+
+    * Reverts the changes made by a commit (creates a new commit that undoes the changes).
+
+    ```bash
+    git revert <commit-hash>
+    ```
+
+35. **Show commit details**
+
+    * Displays detailed information about a specific commit.
+
+    ```bash
+    git show <commit-hash>
+    ```
+
+36. **Configure user information**
+
+    * Set your name and email for commits.
+
+    ```bash
+    git config --global user.name "Your Name"
+    git config --global user.email "your-email@example.com"
+    ```
+
+---
+
+These are some of the most common and essential **Git commands** that are used to manage local and remote repositories, track changes, and collaborate effectively.
+
