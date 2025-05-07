@@ -1,0 +1,4 @@
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<messages>\r\n<message>Added testNG Files</message>\r\n<message>INTD-6599_ReCalculateInvoice_DPSI850Revision changes after Intransit&\#x0A;status adding line item</message>\r\n<message>INTD_6149 LTO855 Revision Code Changes</message>\r\n<message>INTD-6149 Topco LTO855 Changes</message>\r\n</messages>
+eclipse.preferences.version=1
+resourcehistory_graph_split=500,500
+resourcehistory_rev_split=700,300

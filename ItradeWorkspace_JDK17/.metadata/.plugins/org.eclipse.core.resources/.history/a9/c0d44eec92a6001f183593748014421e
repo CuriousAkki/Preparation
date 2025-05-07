@@ -1,0 +1,19 @@
+#Integration
+
+#TEST_EXECUTION_ENVIRONMENT=SQE
+#TEST_EXECUTION_ENVIRONMENT=PREPROD
+TEST_EXECUTION_ENVIRONMENT=UAT
+HOPPER_APP_URL=http://boi-admin01.itradenetwork.com
+APP_URL=https://test.itradenetwork.com
+#APP_URL=https://preprod-test.itradenetwork.com/
+#APP_URL=http://qaweb01.itradenetwork.com
+#APP_URL=https://ongsqe.itradenetwork.net/
+#APP_URL=https://onguat.itradenetwork.net/
+
+#HUB And Browser
+#Use this if running cases from Jenkins
+#HUB_URL=http://selenium-hub:4444
+
+#Use this if running cases on eclipse locally
+HUB_URL=http://localhost:4444
+BROWSER=chrome
