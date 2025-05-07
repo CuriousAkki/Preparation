@@ -175,6 +175,361 @@ Here’s a list of basic **array-related questions** that are commonly asked in 
 * Write a program to find the majority element in an array (an element that appears more than n/2 times).
 * How would you implement this using the Boyer-Moore Voting Algorithm?
 
+Here’s a list of **Java programs** that focus on **basic logic building**. These programs use **loops** and **patterns**, and help to improve your problem-solving and logical thinking skills. They cover a wide range of concepts including loops, patterns, conditions, and mathematical problems.
+
 ---
 
-These questions are essential for gaining a strong understanding of arrays and their basic operations. They test various aspects like manipulation, sorting, searching, and optimization techniques. Mastering these problems will help you prepare for interviews that focus on algorithm design and problem-solving. Let me know if you need code examples or explanations for any specific question!
+### **Basic Logic Builiding Programs**
+
+1. **Print Numbers from 1 to N**
+
+   * Write a program to print numbers from 1 to N using a loop.
+   * **Concepts:** Basic loop, incrementing counter.
+
+   ```java
+   public class PrintNumbers {
+       public static void main(String[] args) {
+           int N = 10;
+           for (int i = 1; i <= N; i++) {
+               System.out.print(i + " ");
+           }
+       }
+   }
+   ```
+
+2. **Print Numbers from N to 1 (Reverse)**
+
+   * Write a program to print numbers from N to 1 in reverse order.
+   * **Concepts:** Reverse iteration using loops.
+
+   ```java
+   public class ReverseNumbers {
+       public static void main(String[] args) {
+           int N = 10;
+           for (int i = N; i >= 1; i--) {
+               System.out.print(i + " ");
+           }
+       }
+   }
+   ```
+
+3. **Sum of First N Natural Numbers**
+
+   * Write a program to calculate the sum of the first N natural numbers.
+   * **Concepts:** Summation using loops.
+
+   ```java
+   public class SumNaturalNumbers {
+       public static void main(String[] args) {
+           int N = 10;
+           int sum = 0;
+           for (int i = 1; i <= N; i++) {
+               sum += i;
+           }
+           System.out.println("Sum of first " + N + " natural numbers: " + sum);
+       }
+   }
+   ```
+
+4. **Factorial of a Number**
+
+   * Write a program to find the factorial of a number.
+   * **Concepts:** Factorial calculation using loops.
+
+   ```java
+   public class Factorial {
+       public static void main(String[] args) {
+           int num = 5;
+           int fact = 1;
+           for (int i = 1; i <= num; i++) {
+               fact *= i;
+           }
+           System.out.println("Factorial of " + num + " is: " + fact);
+       }
+   }
+   ```
+
+5. **Fibonacci Series up to N Terms**
+
+   * Write a program to print the Fibonacci sequence up to N terms.
+   * **Concepts:** Fibonacci sequence logic using loops.
+
+   ```java
+   public class Fibonacci {
+       public static void main(String[] args) {
+           int N = 10;
+           int a = 0, b = 1;
+           System.out.print(a + " " + b + " ");
+           for (int i = 3; i <= N; i++) {
+               int next = a + b;
+               System.out.print(next + " ");
+               a = b;
+               b = next;
+           }
+       }
+   }
+   ```
+
+---
+
+### **Pattern-based Programs**
+
+6. **Print a Simple Star Pattern**
+
+   * Write a program to print a simple star (`*`) pattern.
+   * **Concepts:** Nested loops for printing patterns.
+
+   ```java
+   public class StarPattern {
+       public static void main(String[] args) {
+           int rows = 5;
+           for (int i = 1; i <= rows; i++) {
+               for (int j = 1; j <= i; j++) {
+                   System.out.print("* ");
+               }
+               System.out.println();
+           }
+       }
+   }
+   ```
+
+7. **Print a Right-Angled Triangle Pattern**
+
+   * Write a program to print a right-angled triangle pattern with stars.
+   * **Concepts:** Nested loops for creating triangle shapes.
+
+   ```java
+   public class RightAngledTriangle {
+       public static void main(String[] args) {
+           int rows = 5;
+           for (int i = 1; i <= rows; i++) {
+               for (int j = 1; j <= i; j++) {
+                   System.out.print("*");
+               }
+               System.out.println();
+           }
+       }
+   }
+   ```
+
+8. **Print a Pyramid Pattern**
+
+   * Write a program to print a pyramid pattern of stars.
+   * **Concepts:** Nested loops for creating pyramid shapes.
+
+   ```java
+   public class PyramidPattern {
+       public static void main(String[] args) {
+           int rows = 5;
+           for (int i = 1; i <= rows; i++) {
+               for (int j = i; j < rows; j++) {
+                   System.out.print(" "); // Space for alignment
+               }
+               for (int k = 1; k <= (2 * i - 1); k++) {
+                   System.out.print("*"); // Printing stars
+               }
+               System.out.println();
+           }
+       }
+   }
+   ```
+
+9. **Print a Diamond Pattern**
+
+   * Write a program to print a diamond shape with stars.
+   * **Concepts:** Nested loops and space management.
+
+   ```java
+   public class DiamondPattern {
+       public static void main(String[] args) {
+           int rows = 5;
+           
+           // Upper part of the diamond
+           for (int i = 1; i <= rows; i++) {
+               for (int j = i; j < rows; j++) {
+                   System.out.print(" ");
+               }
+               for (int k = 1; k <= (2 * i - 1); k++) {
+                   System.out.print("*");
+               }
+               System.out.println();
+           }
+           
+           // Lower part of the diamond
+           for (int i = rows - 1; i >= 1; i--) {
+               for (int j = rows; j > i; j--) {
+                   System.out.print(" ");
+               }
+               for (int k = 1; k <= (2 * i - 1); k++) {
+                   System.out.print("*");
+               }
+               System.out.println();
+           }
+       }
+   }
+   ```
+
+10. **Print an Inverted Pyramid Pattern**
+
+    * Write a program to print an inverted pyramid of stars.
+    * **Concepts:** Nested loops, alignment, and descending order printing.
+
+    ```java
+    public class InvertedPyramid {
+        public static void main(String[] args) {
+            int rows = 5;
+            for (int i = rows; i >= 1; i--) {
+                for (int j = rows; j > i; j--) {
+                    System.out.print(" "); // Space for alignment
+                }
+                for (int k = 1; k <= (2 * i - 1); k++) {
+                    System.out.print("*"); // Printing stars
+                }
+                System.out.println();
+            }
+        }
+    }
+    ```
+
+---
+
+### **Logic-building Programs**
+
+11. **Palindrome Check**
+
+    * Write a program to check if a string is a palindrome.
+    * **Concepts:** String manipulation, comparison.
+
+    ```java
+    public class Palindrome {
+        public static void main(String[] args) {
+            String str = "madam";
+            String reversed = "";
+            for (int i = str.length() - 1; i >= 0; i--) {
+                reversed += str.charAt(i);
+            }
+            if (str.equals(reversed)) {
+                System.out.println(str + " is a palindrome.");
+            } else {
+                System.out.println(str + " is not a palindrome.");
+            }
+        }
+    }
+    ```
+
+12. **Prime Number Check**
+
+    * Write a program to check if a number is prime.
+    * **Concepts:** Looping, condition checking.
+
+    ```java
+    public class PrimeNumber {
+        public static void main(String[] args) {
+            int num = 29;
+            boolean isPrime = true;
+
+            for (int i = 2; i <= num / 2; i++) {
+                if (num % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+
+            if (isPrime) {
+                System.out.println(num + " is a prime number.");
+            } else {
+                System.out.println(num + " is not a prime number.");
+            }
+        }
+    }
+    ```
+
+13. **Armstrong Number Check**
+
+    * Write a program to check if a number is an Armstrong number.
+    * **Concepts:** Mathematical checks, loops.
+
+    ```java
+    public class ArmstrongNumber {
+        public static void main(String[] args) {
+            int num = 153;
+            int originalNumber, remainder, result = 0, n = 0;
+            originalNumber = num;
+
+            // Count number of digits
+            for (; originalNumber != 0; originalNumber /= 10, ++n);
+            
+            originalNumber = num;
+
+            // Calculate the Armstrong number
+            for (; originalNumber != 0; originalNumber /= 10) {
+                remainder = originalNumber % 10;
+                result += Math.pow(remainder, n);
+            }
+            
+            if (result == num) {
+                System.out.println(num + " is an Armstrong number.");
+            } else {
+                System.out.println(num + " is not an Armstrong number.");
+            }
+        }
+    }
+    ```
+
+14. **Sum of Digits of a Number**
+
+    * Write a program to find the sum of digits of a number.
+    * **Concepts:** Mathematical operations and loops.
+
+    ```java
+    public class SumOfDigits {
+        public static void main(String[] args) {
+            int num = 1234;
+            int sum = 0;
+            
+            while (num != 0) {
+                sum += num % 10;
+                num /= 10;
+            }
+            
+            System.out.println("Sum of digits: " + sum);
+        }
+    }
+    ```
+
+15. **Find the Largest Number in an Array**
+
+    * Write a program to find the largest number in an array.
+    * **Concepts:** Array traversal, comparison.
+
+    ```java
+    public class LargestInArray {
+        public static void main(String[] args) {
+            int[] arr = {12, 34, 5, 9, 56};
+            int largest = arr[0];
+            
+            for (int i = 1; i < arr.length; i++) {
+                if (arr[i] > largest) {
+                    largest = arr[i];
+                }
+            }
+            
+            System.out.println("Largest number in array: " + largest);
+        }
+    }
+    ```
+
+---
+
+### **Bonus: Bonus Programs**
+
+16. **Sum of Even Numbers in an Array**
+
+    * Write a program to sum all even numbers in an array.
+
+17. **Find the Missing Number in an Array**
+
+    * Given an array of numbers from 1 to N with one number missing, find the missing number.
+
+These programs build basic logic-building skills using **loops**, **pattern printing**, and **mathematical operations**. They are designed to help you improve your coding and problem-solving abilities. Let me know if you'd like more explanations or further examples!
+
